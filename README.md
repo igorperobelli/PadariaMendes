@@ -1,2 +1,2 @@
 # PadariaMendes
- Projeto voltado para criação de uma página voltada de Padaria.
+ Projeto voltado para criação de uma página de Padaria.
