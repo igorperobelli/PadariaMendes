@@ -14,5 +14,16 @@ header {
     overflow: hidden;
     line-height: 200px;
     max-height: 200px;
+}
+header > h1{ /* Selecionamos aqui a cor da letra do nosso H1 ou seja, do nosso título */
+    color: white;
+}
 
+header > img{ /* Aqui estamos chamando nossa imagem para ser atribuidas alterações */
+    width: 200px; /* Largura da nossa imagem */
+    height: 115px; /* Tamanho da nossa imagem */
+}
+#menu-header{ /* Nosso menu de navegação */
+    display: flex; /* Responsável por colocar os itens na mesma linha (lado a lado)*/
+    align-items: center; /* Alinhar os itens   */
 }
