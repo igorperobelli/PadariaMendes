@@ -1,29 +1,152 @@
-*{
-    margin: 0%;
-    padding: 0%;
+* {        /*Configurações padrões de início de um projeto dentro do CSS  */
+    padding: 0;            
+    margin: 0;
     vertical-align: baseline;
     list-style: none;
     font-family: Segoe UI, Roboto, Helvetica, Arial, sans-serif;
 }
+
 header {
-    display: flex; 
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 15px;
-    background-color: rgb(85, 48, 6);
-    overflow: hidden;
-    line-height: 200px;
-    max-height: 200px;
-}
-header > h1{ /* Selecionamos aqui a cor da letra do nosso H1 ou seja, do nosso título */
-    color: white;
+      display: flex; /* Resposável por colocar os itens na mesma linha (lado a lado) */
+      align-items: center; /*Alinhar os itens do nosso Header para o centro*/
+      justify-content: space-evenly; /* Tradução:justificar-conteúdo: espaço uniformemente. Alinhar os itens igualmente dentro da página */
+      padding: 15px;  /* Cuida do Preenchimento */
+      background-color: rgb(85, 48, 6); /* Cor de fundo do nosso Cabeçalho/Header */
+      overflow: hidden; /* */
+      line-height: 200px; /* altura da linha */
+      max-height: 200px; /* altura máxima */
 }
 
-header > img{ /* Aqui estamos chamando nossa imagem para ser atribuidas alterações */
-    width: 200px; /* Largura da nossa imagem */
-    height: 115px; /* Tamanho da nossa imagem */
+header > h1 {  /* Selecionamos aqui a cor da letra do nosso H1 ou seja, do nosso título */
+    color: white; /* chamamos a propriedade color e definimos uma cor em questão */ 
+    font-size: 45px;
 }
-#menu-header{ /* Nosso menu de navegação */
-    display: flex; /* Responsável por colocar os itens na mesma linha (lado a lado)*/
-    align-items: center; /* Alinhar os itens   */
+
+
+header > img {  /* Aqui estamos chamando nossa imagem para ser atribuídas alterações*/
+    width: 250px;  /* Largura da nossa imagem */
+    height: 190px; /* Tamanho da nossa imagem */
 }
+
+#menu-header { /* Nosso menu de navegação*/
+    display: flex; /* Resposável por colocar os itens na mesma linha (lado a lado) */
+    align-items: center; /* Alinhar os itens do nosso Header para o centro */
+}
+
+#list-menu {  /* Nossa lista não ordenada, aqui mudaremos diretamente nossa lista */
+    display: flex; /* Resposável por colocar os itens na mesma linha (lado a lado) */
+    margin-right: 1rem; /* margem da direita. 1 REM equivale a 16px, ou seja podemos usa-lo para facilitar a inserção de PX*/
+}
+
+.itens-menu-header { /* Nossas li que estão dentro do LIST MENU, onde se encontram os nomes dos itens apresentados no HEADER */
+    margin-right: 25px; /* margem da direita */
+}
+
+.itens-menu-header > a:hover { /* Nossas li que estão dentro do LIST MENU. (a) nossa tag de link que é representada por: HOME/PRODUTOS/CONTATO, e o Hover responsável pela modificação de cor ao passar o cursor em cima.*/
+    color: yellow; /* Aqui atribuimos uma cor */
+    transition: 1s; /* E o tempo em que será exibido ao passar o cursor */
+}
+
+.itens-menu-header > a { /* Nossas li que estão dentro do LIST MENU. (a) nossa tag de link que é representada por: HOME/PRODUTOS/CONTATO */
+    color: white; /* Cor das letras */
+    text-decoration: none; /* Responsável por tirar o sublinhado inferior que estava visível */
+    font-size: 12px; /* Tamanho da letra */
+} 
+
+#btn-header {   /*Nossa ID do Botão de Login */
+    display: flex; /*  Resposável por colocar os itens na mesma linha (lado a lado) */
+}
+
+#btn-header > button { /* Aqui chamamos nossa ID e onde queremos fazer alterações, no caso o nosso BOTÃO (button)*/
+    padding: 8px; /*  Cuida do Preenchimento */
+    background-color: transparent; /* Aqui deixamos o fundo do Botão transparent, ou seja sem o fundo Branco que estava em primeiro plano */
+    border: none; /* None é usado para retirar algo, nesse caso a borda. */ 
+}
+
+#btn-header > button > a { /* Estamos chamando aqui nossa TAG de Link para alteração. */ 
+    display: flex; /* Resposável por colocar os itens na mesma linha (lado a lado)  */
+    align-items: center; /* Alinhar os itens para o centro */
+}
+
+#btn-header > button > a > img { /* Aqui estamos mexendo nO ICON do botão*/
+    width: 30px; /* Largura */
+    height: 30px; /* Tamanho */
+    margin-right: 2px; /* margem da direita */
+}
+
+#btn-header > button > a { /* Estamos chamando aqui nossa TAG de Link para alteração (NOVAMENTE) */
+    color: white; /*Cor da letra */
+    text-decoration: none; /* Responsável por tirar o sublinhado que estava visível */
+    font-weight: 400; /* espessura da fonte */
+}
+
+#img-destaque { /* Aqui chamamos a ID que chamamos no HTML*/
+    padding: 260px;  /* Cuida do Preenchimento */
+    background-image: url(imagens/padaria.webp); /* Usada para inserir imagens de fundo */
+    background-position: center; /* Aqui posicionamos nossa imagem para o centro */
+}
+
+
+/* Diferença entre ID e Class: A diferença entre um id e uma class é que um id é usado apenas para identificar um único elemento em nosso HTML. 
+Os identificadores são usados ​​apenas quando um elemento na página precisa ter um estilo específico aplicado a ele. 
+No entanto, uma class pode ser usada para identificar mais de um elemento HTML*/
+
+
+
+.img-div {  /* Aqui chamamos nossa Class para alteração*/ 
+    padding: 25px; /* Cuida do Preenchimento */ 
+    background-image: url(imagens/img-div.jpg); /* Usada para inserir imagens de fundo */
+    background-position: center; /* Aqui posicionamos nossa imagem para o centro */ 
+    background-size: auto; /* Background-Size: especifica o tamanho das imagens de fundo. Auto: Responsável por preencher totalmente a imagem. */
+}
+
+main > section > h2 { /* Aqui estamos chamando nosso H2 para estilização */
+    margin-top: 0px; /* Indica o espaço acima do elemento / superior */
+    font-size: 36px; /* Tamanho da letra */
+    text-align: center; /* Alinhando o texto para o centro */
+    color: #000000; /* Cor da letra do nosso H2 */
+}
+
+#clients{
+    background-color: white; /* Cor de fundo da nossa Section */
+    margin-top: 0; /* Indica o espaço acima do elemento /superior */
+    padding: 50px; /* Cuida do preenchimento */
+}
+
+.line{ 
+    margin: 0 auto; /* Definimos em 0 a margin e colocamos o mesmo para auto para que recaia para o todo */
+    width: 20%; /* Largura */
+}
+
+#clients-list {  /* Aqui chamamos a nossa ID */ 
+    display: flex; /* Resposável por colocar os itens na mesma linha (lado a lado) */
+    align-items: center; /* Alinhar os itens para o centro */
+    justify-content: space-evenly; /* Tradução:justificar-conteúdo: espaço uniformemente. Alinhar os itens igualmente dentro da página */
+    margin-top: 30px; /* indica o espaço acima do elemento / superior */
+}
+
+.clients-item{ /* Aqui chamamos nossa Class que está dentro da nossa ID */
+    display: flex; /* Responsável por colocar os itens na mesma linha (lado a lado) */
+    justify-content: center; /* Justificar-conteúdo no centro */
+    align-items: center; /* Alinhar os itens para o centro */
+    flex-direction: column; /*  */
+}
+
+.clients-item > img { /* Aqui chamamos nossa TAG IMG para estilização  */
+    width: 84px; /* Largura */
+    height: 84px; /* Tamanho */
+}
+
+.clients-item > h3{ /* Aqui chamamos nosso H3 para estilizar*/
+    font-family: 'Dancing script', cursive; /* Fonte escolhida */
+    font-size: 32px;/* Tamanho da fonte*/
+    align-items: center;  /* Alinhar os itens para o centro */
+    margin-top: 10px; /* indica o espaço acima do elemento / superior */
+}
+
+.clients-item > p {
+    font-family: 'Dancing script', cursive; /* Fonte escolhida */
+    font-size: 26px;/* Tamanho da fonte*/
+    align-items: center;  /* Alinhar os itens para o centro */
+    margin-top: 10px; /* indica o espaço acima do elemento / superior */
+} 
