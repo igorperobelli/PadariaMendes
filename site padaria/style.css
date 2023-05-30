@@ -150,3 +150,35 @@ main > section > h2 { /* Aqui estamos chamando nosso H2 para estilização */
     align-items: center;  /* Alinhar os itens para o centro */
     margin-top: 10px; /* indica o espaço acima do elemento / superior */
 } 
+
+#featured-products{  /* ID usada para a section dos nossos produtos */
+    background: linear-gradient(180deg, #F4CEAF 8.33%, rgb(244, 200, 175, 0) 100%); /* Aqui colocamos uma estilização de fundo em Degradê */ 
+    padding: 30px; /* Preenchimento */
+}
+
+.products {  /* Aqui chamamos nossa Class dos produtos para estilização.*/
+    margin-top: 3em; /*  indica o espaço acima do elemento / superior */
+    display: flex; /* Resposável por colocar os itens na mesma linha (lado a lado) */
+    align-items: center; /* Alinhar os itens para o centro */
+    justify-content: space-evenly; /* Tradução:justificar-conteúdo: espaço uniformemente. Alinhar os itens igualmente dentro da página */
+}
+
+.img-products { /* Class inserida nas nossas tags IMG */
+    width: 300px;  /* Largura */
+    height: 300px; /* Tamanho */
+    border-radius: 50px; /* Estilo arredondado das bordas */
+}
+
+.title-products {  /* Class usada para edição dos títulos dos produtos, exemplo perfeito de o porque usamos a classe nesses casos */
+    margin-top: 10px; /* indica o espaço acima do elemento / superior */
+    font-family: 'Ubuntu', 'sans-serif'; /* Fonte selecionada */
+    text-align: center;/* Alinhar texto. Center: Centro*/
+    font-size: 22px;  /* Tamanho da Letra */
+}
+
+#featured-products > a {  /* Aqui estamos chamando nossa TAG de link para estilização */
+    text-decoration: none;/* Aqui desabilitamos com o none qualquer sublinado que tenha dentro da nossa TAG "a" */
+    font-family: 'Ubuntu', 'sans-serif';  /* Fonte selecionada */ 
+    font-size: 20px; /* Tamanho da letra */
+    color: red; /* Cor da Letra */
+}
