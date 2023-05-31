@@ -163,7 +163,7 @@ main > section > h2 { /* Aqui estamos chamando nosso H2 para estilização */
     justify-content: space-evenly; /* Tradução:justificar-conteúdo: espaço uniformemente. Alinhar os itens igualmente dentro da página */
 }
 
-.img-products { /* Class inserida nas nossas tags IMG */
+.img-product { /* Class inserida nas nossas tags IMG */
     width: 300px;  /* Largura */
     height: 300px; /* Tamanho */
     border-radius: 50px; /* Estilo arredondado das bordas */
@@ -182,3 +182,75 @@ main > section > h2 { /* Aqui estamos chamando nosso H2 para estilização */
     font-size: 20px; /* Tamanho da letra */
     color: red; /* Cor da Letra */
 }
+
+#featured-products > a:hover { /* Aqui estamos chamando novamente nossa TAG de link para colocar um efeito Hover nela */
+    text-decoration: underline; /* Aqui chamamos o text decoration para colocar uma decoração ao passar do cursos underline serve como um sublinhado em baixo do nome*/
+    font-size: 22px; /* Tamanho da letra ao passar o cursor em cima */
+    transition: 1s; /* O tempo que será realizado esta ação */
+}
+
+#sobre-nos { /* Chamamos aqui nossa ID */
+    background-image: url(imagens/fundo-sobre-nos.jpg); /* Usado para inserir a imagem de fundo */
+    background-repeat: no-repeat; /* Aqui colocamos a função para a imagem não seja repetida */
+    background-attachment: fixed; /* */
+    background-position: center; /* Na posição da imagem colocamos ao centro */
+    background-size: cover; /* */
+    padding: 120px; /* */
+}
+ 
+#sobre-nos > h3 {  /* */
+    color: white; /* */
+    font-size: 64px; /* */
+    text-align: center; /* */
+    font-family: 'Ubuntu', 'sans-serif'; /* */
+}
+
+#sobre-nos >  p {   /* */ 
+    font-family: 'Ubuntu', 'sans-serif'; /* */
+    font-weight: 500; /* */
+    color: white; /* */
+    font-size: 22px; /* */
+    margin-top: 2em; /* */
+    text-align: left; /* */
+    
+}
+
+footer {    /* */
+    padding: 80px;  /* */
+    background-image: url(imagens/Cópia\ de\ img-footer.jpg);  /* */
+    background-position: bottom;  /* */
+    background-repeat: no-repeat;  /* */
+    
+}
+
+footer > ul {   /* */
+    display: flex;  /* */
+    justify-content: space-evenly;  /* */
+}
+
+footer > h2 {  /* */
+    color: black bold; /* */
+    font-size: 40px;  /* */
+    font-weight: bold;  /* */
+    text-align: center;  /* */
+    margin-bottom: 1em;  /* */
+}
+
+.item-menu-footer {  /* */
+    display: flex;  /* */
+    align-items: center;  /* */
+    margin-top: 30px;  /* */
+}
+
+.item-menu-footer > img {  /* */
+    width: 34px;  /* */
+    height: 34px;  /* */
+}
+
+.item-menu-footer > p {  /* */
+    color: black bold; /* */
+    font-size: 24px; /* */
+    font-weight: bold; /* */
+    margin-left: 10px; /* */
+}
+
