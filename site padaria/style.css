@@ -181,6 +181,8 @@ main > section > h2 { /* Aqui estamos chamando nosso H2 para estilização */
     font-family: 'Ubuntu', 'sans-serif';  /* Fonte selecionada */ 
     font-size: 20px; /* Tamanho da letra */
     color: red; /* Cor da Letra */
+    text-align: center;
+    margin-left: 35rem;
 }
 
 #featured-products > a:hover { /* Aqui estamos chamando novamente nossa TAG de link para colocar um efeito Hover nela */
