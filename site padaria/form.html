@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lOGIN</title>
+    <title>LOGIN</title>
     <link rel="stylesheet" href="form.css">
 
 </head>
@@ -14,27 +14,29 @@
     <section class="form-container"> <!-- Damos um nome para a nossa Section a qual se chama "Form-Containet"-->
         <div class="container"><!-- Abrimos uma Div para que possamos destacar nosso formulário -->
 
+            <form method="post" action="../site padaria/envia.php" ></form>
+
             <form> <!-- Abrimos aqui nossa TAG de Formulário -->
                 <h1>Login</h1> <!-- Título para o nosso formulário -->
                 <p>Faça seu login</p> <!-- Pequena descrição TAG de Paragrafo -->
                 <div class="input-single"><!-- Aqui criamos uma divisão para   -->
-                    <input type="text" name=""  id="nome-box"  class="input" autocomplete="off" required>
+                    <input type="text" name="login" required id="login"  class="input" autocomplete="off" required>
                     <label for="nome-box">Login</label>
                 </div>
 
                 <div class="input-single">
-                    <input type="password" name=""  id="email-box"  class="input"  autocomplete="off"  required>
+                    <input type="password" name="senha" required id="senha"  class="input"  autocomplete="off"  required>
                     <label for="email-box">Senha</label>
                 </div>
 
                 <div class="input-single"><!-- Aqui criamos uma divisão para   -->
-                    <input type="text" name=""  id="nome-box"  class="input" autocomplete="off" required>
+                    <input type="text"  name="email" required id="email"  class="input" autocomplete="off" required>
                     <label for="nome-box">Email</label>
                 </div>
 
                 <div class="input-single"><!-- Aqui criamos uma divisão para   -->
-                    <input type="number" name=""  id="nome-box"  class="input" autocomplete="off" required>
-                    <label for="nome-box">Número</label>
+                    <input type="number"  name="telefone" required id="telefone"  class="input" autocomplete="off" required>
+                    <label for="telefone">Número</label>
                 </div>
 
                 <div class="btn"><input type="submit" value="Entrar"></div>
